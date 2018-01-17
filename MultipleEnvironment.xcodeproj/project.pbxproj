@@ -322,6 +322,96 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CEC631B6200F5C870020A7F8 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE39A62200F190800A05D20 /* AdhocConfig.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: teast feast (7LXJH4JJ2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: teast feast (7LXJH4JJ2Q)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = QA;
+		};
+		CEC631B7200F5C870020A7F8 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE39A62200F190800A05D20 /* AdhocConfig.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BLOCKBONDS AS (358UH289E4)";
+				DEVELOPMENT_TEAM = 358UH289E4;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = MultipleEnvironment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(APP_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = QA;
+		};
+		CEC631B8200F5C870020A7F8 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MultipleEnvironmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-shuvro.MultipleEnvironmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipleEnvironment.app/MultipleEnvironment";
+			};
+			name = QA;
+		};
+		CEC631B9200F5C870020A7F8 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MultipleEnvironmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-shuvro.MultipleEnvironmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MultipleEnvironment;
+			};
+			name = QA;
+		};
 		CEE39A52200F173100A05D20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CEE39A61200F18FF00A05D20 /* DevConfig.xcconfig */;
@@ -507,102 +597,6 @@
 			};
 			name = Release;
 		};
-		CEE39A5D200F18BA00A05D20 /* Adhoc */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEE39A62200F190800A05D20 /* AdhocConfig.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: BLOCKBONDS AS (358UH289E4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Adhoc;
-		};
-		CEE39A5E200F18BA00A05D20 /* Adhoc */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEE39A62200F190800A05D20 /* AdhocConfig.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: BLOCKBONDS AS (358UH289E4)";
-				DEVELOPMENT_TEAM = 358UH289E4;
-				INFOPLIST_FILE = MultipleEnvironment/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
-				PRODUCT_NAME = "$(APP_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Adhoc;
-		};
-		CEE39A5F200F18BA00A05D20 /* Adhoc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MultipleEnvironmentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-shuvro.MultipleEnvironmentTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipleEnvironment.app/MultipleEnvironment";
-			};
-			name = Adhoc;
-		};
-		CEE39A60200F18BA00A05D20 /* Adhoc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = MultipleEnvironmentUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-shuvro.MultipleEnvironmentUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = MultipleEnvironment;
-			};
-			name = Adhoc;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -610,41 +604,41 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEE39A52200F173100A05D20 /* Debug */,
-				CEE39A5D200F18BA00A05D20 /* Adhoc */,
 				CEE39A53200F173100A05D20 /* Release */,
+				CEC631B6200F5C870020A7F8 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = QA;
 		};
 		CEE39A54200F173100A05D20 /* Build configuration list for PBXNativeTarget "MultipleEnvironment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEE39A55200F173100A05D20 /* Debug */,
-				CEE39A5E200F18BA00A05D20 /* Adhoc */,
 				CEE39A56200F173100A05D20 /* Release */,
+				CEC631B7200F5C870020A7F8 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = QA;
 		};
 		CEE39A57200F173100A05D20 /* Build configuration list for PBXNativeTarget "MultipleEnvironmentTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEE39A58200F173100A05D20 /* Debug */,
-				CEE39A5F200F18BA00A05D20 /* Adhoc */,
 				CEE39A59200F173100A05D20 /* Release */,
+				CEC631B8200F5C870020A7F8 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = QA;
 		};
 		CEE39A5A200F173100A05D20 /* Build configuration list for PBXNativeTarget "MultipleEnvironmentUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEE39A5B200F173100A05D20 /* Debug */,
-				CEE39A60200F18BA00A05D20 /* Adhoc */,
 				CEE39A5C200F173100A05D20 /* Release */,
+				CEC631B9200F5C870020A7F8 /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = QA;
 		};
 /* End XCConfigurationList section */
 	};

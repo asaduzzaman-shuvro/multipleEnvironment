@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-               BuildableName = "MultipleEnvironment.app"
+               BuildableName = "Spenn QA.app"
                BlueprintName = "MultipleEnvironment"
                ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
             </BuildableReference>
@@ -28,32 +28,12 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CEE39A3F200F173100A05D20"
-               BuildableName = "MultipleEnvironmentTests.xctest"
-               BlueprintName = "MultipleEnvironmentTests"
-               ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CEE39A4A200F173100A05D20"
-               BuildableName = "MultipleEnvironmentUITests.xctest"
-               BlueprintName = "MultipleEnvironmentUITests"
-               ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-            BuildableName = "MultipleEnvironment.app"
+            BuildableName = "Spenn QA.app"
             BlueprintName = "MultipleEnvironment"
             ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
          </BuildableReference>
@@ -76,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-            BuildableName = "MultipleEnvironment.app"
+            BuildableName = "Spenn QA.app"
             BlueprintName = "MultipleEnvironment"
             ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
          </BuildableReference>
@@ -95,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-            BuildableName = "MultipleEnvironment.app"
+            BuildableName = "Spenn QA.app"
             BlueprintName = "MultipleEnvironment"
             ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
          </BuildableReference>
@@ -105,7 +85,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "QA"
+      buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
