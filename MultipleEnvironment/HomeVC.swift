@@ -11,31 +11,26 @@ import UIKit
 class HomeVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
     var tableView:  UITableView!
-    var datas: [String] = []
+    var datas: [(key: String, value: String)] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        tableView = UITableView(frame: CGRect(x: 0, y: 20, width: self.view.frame.width, height: self.view.frame.height), style: .plain)
+        tableView = UITableView(frame: CGRect(x: 0, y: 20, width: self.view.frame.width, height: self.view.frame.height - 80), style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
+        tableView.estimatedRowHeight = 44
         tableView.estimatedSectionFooterHeight = 0
         self.view.addSubview(tableView)
         
-        if let infoDic = Bundle.main.infoDictionary {
-            for (key,valu) in infoDic {
-                
-                if let strValue = valu as? String {
-                    datas.append("\(key) --> \(strValue)")
-                }
-                
-            }
-            tableView.reloadData()
-//            print(infoDic.keys)
-//            print(infoDic.values)
-        }
+        let button = UIButton(frame: CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50))
+        button.backgroundColor = UIColor.green
+        button.addTarget(self, action: #selector(reloadTableView), for: .touchUpInside)
+        self.view.addSubview(button)
+        
+        reloadTableView()
         
     }
 
@@ -44,12 +39,26 @@ class HomeVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
+    func reloadTableView() {
+        if let infoDic = Bundle.main.infoDictionary {
+            for (key,valu) in infoDic {
+                
+                if let strValue = valu as? String {
+                    let obj = (key, strValue)
+                    datas.append(obj)
+                }
+            }
+            tableView.reloadData()
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
         if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
-            cell?.textLabel?.text = datas[indexPath.row]
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
+            cell?.textLabel?.text = datas[indexPath.row].key
+            cell?.detailTextLabel?.text = datas[indexPath.row].value
         }
         
         return cell!
@@ -57,6 +66,10 @@ class HomeVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datas.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
 
 
