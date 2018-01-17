@@ -7,9 +7,12 @@
 //
 
 APP_NAME = Spenn Dev
-APP_BUNDLE_ID = com.blockbonds.spenn.dev
+APP_BUNDLE_ID = com.blockbonds.spenn
 APP_ICON =  AppIconDev
 
 BACKEND_URL = http:\/\/api.intensifystudio.com/development
 CONSUMER_KEY = ck_a57e4fa2e14c12ae3f400371cf2951ec3dea5_dev
 CONSUMER_SECRET = cs_c847caa35ce1041e9c69d239141f13f63bb22b_dev
+
+PROVISIONING_PROFILE = match Development com.blockbonds.spenn
+TEAM_ID = 358UH289E4

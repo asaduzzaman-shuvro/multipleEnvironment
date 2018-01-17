@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CEE39A2C200F173100A05D20 /* MultipleEnvironment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleEnvironment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE39A2C200F173100A05D20 /* Spenn Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spenn Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE39A2F200F173100A05D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE39A31200F173100A05D20 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CEE39A34200F173100A05D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		CEE39A2D200F173100A05D20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEE39A2C200F173100A05D20 /* MultipleEnvironment.app */,
+				CEE39A2C200F173100A05D20 /* Spenn Dev.app */,
 				CEE39A40200F173100A05D20 /* MultipleEnvironmentTests.xctest */,
 				CEE39A4B200F173100A05D20 /* MultipleEnvironmentUITests.xctest */,
 			);
@@ -148,7 +148,7 @@
 			);
 			name = MultipleEnvironment;
 			productName = MultipleEnvironment;
-			productReference = CEE39A2C200F173100A05D20 /* MultipleEnvironment.app */;
+			productReference = CEE39A2C200F173100A05D20 /* Spenn Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CEE39A3F200F173100A05D20 /* MultipleEnvironmentTests */ = {
@@ -199,7 +199,8 @@
 				TargetAttributes = {
 					CEE39A2B200F173100A05D20 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 358UH289E4;
+						ProvisioningStyle = Manual;
 					};
 					CEE39A3F200F173100A05D20 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -344,6 +345,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: teast feast (7LXJH4JJ2Q)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -396,7 +398,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: teast feast (7LXJH4JJ2Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: teast feast (7LXJH4JJ2Q)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -420,24 +423,32 @@
 		};
 		CEE39A55200F173100A05D20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE39A61200F18FF00A05D20 /* DevConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: teast feast (7LXJH4JJ2Q)";
+				DEVELOPMENT_TEAM = 358UH289E4;
 				INFOPLIST_FILE = MultipleEnvironment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-shuvro.MultipleEnvironment";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(APP_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CEE39A56200F173100A05D20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE39A63200F191500A05D20 /* ReleaseConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BLOCKBONDS AS (358UH289E4)";
+				DEVELOPMENT_TEAM = 358UH289E4;
 				INFOPLIST_FILE = MultipleEnvironment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-shuvro.MultipleEnvironment";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(APP_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -519,7 +530,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BLOCKBONDS AS (358UH289E4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -550,12 +562,16 @@
 		};
 		CEE39A5E200F18BA00A05D20 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE39A62200F190800A05D20 /* AdhocConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BLOCKBONDS AS (358UH289E4)";
+				DEVELOPMENT_TEAM = 358UH289E4;
 				INFOPLIST_FILE = MultipleEnvironment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-shuvro.MultipleEnvironment";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(APP_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Adhoc;
@@ -608,6 +624,7 @@
 				CEE39A56200F173100A05D20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEE39A57200F173100A05D20 /* Build configuration list for PBXNativeTarget "MultipleEnvironmentTests" */ = {
 			isa = XCConfigurationList;
@@ -617,6 +634,7 @@
 				CEE39A59200F173100A05D20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEE39A5A200F173100A05D20 /* Build configuration list for PBXNativeTarget "MultipleEnvironmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -626,6 +644,7 @@
 				CEE39A5C200F173100A05D20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
