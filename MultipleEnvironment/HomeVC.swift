@@ -27,11 +27,18 @@ class HomeVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         
         let button = UIButton(frame: CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50))
         button.backgroundColor = UIColor.green
+        button.setTitle(getValue(for: "BackEndUrl"), for: .normal)
         button.addTarget(self, action: #selector(reloadTableView), for: .touchUpInside)
         self.view.addSubview(button)
         
         reloadTableView()
         
+        
+    }
+    
+    func getValue(for key: String) -> String? {
+        
+        return (Bundle.main.infoDictionary?[key] as? String)?.replacingOccurrences(of: "\\", with: "")
     }
 
     override func didReceiveMemoryWarning() {
