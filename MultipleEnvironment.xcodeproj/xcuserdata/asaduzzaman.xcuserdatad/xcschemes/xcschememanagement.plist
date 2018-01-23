@@ -4,22 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Dev.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>MultipleEnvironment copy.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>MultipleEnvironment.xcscheme</key>
+		<key>MultipleEnvironment  Dev.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>QA.xcscheme</key>
+		<key>MultipleEnvironment.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
