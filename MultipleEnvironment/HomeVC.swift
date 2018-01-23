@@ -25,6 +25,7 @@ class HomeVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         tableView.estimatedSectionFooterHeight = 0
         self.view.addSubview(tableView)
         
+        
         let button = UIButton(frame: CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50))
         button.backgroundColor = UIColor.green
         button.setTitle(getValue(for: "BackEndUrl"), for: .normal)

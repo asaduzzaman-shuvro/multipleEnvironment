@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-               BuildableName = "Spenn QA.app"
-               BlueprintName = "MultipleEnvironment"
+               BlueprintIdentifier = "CE170A272016F703002A62AA"
+               BuildableName = "MultipleEnvironment  Dev.app"
+               BlueprintName = "MultipleEnvironment  Dev"
                ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-            BuildableName = "Spenn QA.app"
-            BlueprintName = "MultipleEnvironment"
+            BlueprintIdentifier = "CE170A272016F703002A62AA"
+            BuildableName = "MultipleEnvironment  Dev.app"
+            BlueprintName = "MultipleEnvironment  Dev"
             ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-            BuildableName = "Spenn QA.app"
-            BlueprintName = "MultipleEnvironment"
+            BlueprintIdentifier = "CE170A272016F703002A62AA"
+            BuildableName = "MultipleEnvironment  Dev.app"
+            BlueprintName = "MultipleEnvironment  Dev"
             ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-            BuildableName = "Spenn QA.app"
-            BlueprintName = "MultipleEnvironment"
+            BlueprintIdentifier = "CE170A272016F703002A62AA"
+            BuildableName = "MultipleEnvironment  Dev.app"
+            BlueprintName = "MultipleEnvironment  Dev"
             ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

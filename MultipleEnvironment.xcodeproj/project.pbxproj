@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE170A292016F703002A62AA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE39A31200F173100A05D20 /* HomeVC.swift */; };
+		CE170A2A2016F703002A62AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE39A2F200F173100A05D20 /* AppDelegate.swift */; };
+		CE170A2D2016F703002A62AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE39A38200F173100A05D20 /* LaunchScreen.storyboard */; };
+		CE170A2E2016F703002A62AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE39A36200F173100A05D20 /* Assets.xcassets */; };
+		CE170A2F2016F703002A62AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE39A33200F173100A05D20 /* Main.storyboard */; };
 		CEE39A30200F173100A05D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE39A2F200F173100A05D20 /* AppDelegate.swift */; };
 		CEE39A32200F173100A05D20 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE39A31200F173100A05D20 /* HomeVC.swift */; };
 		CEE39A35200F173100A05D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE39A33200F173100A05D20 /* Main.storyboard */; };
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE170A342016F703002A62AA /* MultipleEnvironment  Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MultipleEnvironment  Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE170A352016F703002A62AA /* MultipleEnvironment copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MultipleEnvironment copy-Info.plist"; path = "/Volumes/SHUVROHD/Working Projects/MultipleEnvironment/MultipleEnvironment copy-Info.plist"; sourceTree = "<absolute>"; };
 		CEE39A2C200F173100A05D20 /* Spenn Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spenn Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE39A2F200F173100A05D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE39A31200F173100A05D20 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -53,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE170A2B2016F703002A62AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE39A29200F173100A05D20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,6 +98,7 @@
 				CEE39A43200F173100A05D20 /* MultipleEnvironmentTests */,
 				CEE39A4E200F173100A05D20 /* MultipleEnvironmentUITests */,
 				CEE39A2D200F173100A05D20 /* Products */,
+				CE170A352016F703002A62AA /* MultipleEnvironment copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +108,7 @@
 				CEE39A2C200F173100A05D20 /* Spenn Dev.app */,
 				CEE39A40200F173100A05D20 /* MultipleEnvironmentTests.xctest */,
 				CEE39A4B200F173100A05D20 /* MultipleEnvironmentUITests.xctest */,
+				CE170A342016F703002A62AA /* MultipleEnvironment  Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +150,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE170A272016F703002A62AA /* MultipleEnvironment  Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE170A302016F703002A62AA /* Build configuration list for PBXNativeTarget "MultipleEnvironment  Dev" */;
+			buildPhases = (
+				CE170A282016F703002A62AA /* Sources */,
+				CE170A2B2016F703002A62AA /* Frameworks */,
+				CE170A2C2016F703002A62AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MultipleEnvironment  Dev";
+			productName = MultipleEnvironment;
+			productReference = CE170A342016F703002A62AA /* MultipleEnvironment  Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 		CEE39A2B200F173100A05D20 /* MultipleEnvironment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEE39A54200F173100A05D20 /* Build configuration list for PBXNativeTarget "MultipleEnvironment" */;
@@ -197,6 +230,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Asaduzzaman Shuvro";
 				TargetAttributes = {
+					CE170A272016F703002A62AA = {
+						DevelopmentTeam = 358UH289E4;
+					};
 					CEE39A2B200F173100A05D20 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 358UH289E4;
@@ -230,11 +266,22 @@
 				CEE39A2B200F173100A05D20 /* MultipleEnvironment */,
 				CEE39A3F200F173100A05D20 /* MultipleEnvironmentTests */,
 				CEE39A4A200F173100A05D20 /* MultipleEnvironmentUITests */,
+				CE170A272016F703002A62AA /* MultipleEnvironment  Dev */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE170A2C2016F703002A62AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE170A2D2016F703002A62AA /* LaunchScreen.storyboard in Resources */,
+				CE170A2E2016F703002A62AA /* Assets.xcassets in Resources */,
+				CE170A2F2016F703002A62AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE39A2A200F173100A05D20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +309,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE170A282016F703002A62AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE170A292016F703002A62AA /* HomeVC.swift in Sources */,
+				CE170A2A2016F703002A62AA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE39A28200F173100A05D20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +378,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE170A312016F703002A62AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE39A61200F18FF00A05D20 /* DevConfig.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shuvro Bb (A25S2VZ378)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shuvro Bb (A25S2VZ378)";
+				DEVELOPMENT_TEAM = 358UH289E4;
+				INFOPLIST_FILE = "MultipleEnvironment copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CE170A322016F703002A62AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE39A63200F191500A05D20 /* ReleaseConfig.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BLOCKBONDS AS (358UH289E4)";
+				DEVELOPMENT_TEAM = 358UH289E4;
+				INFOPLIST_FILE = "MultipleEnvironment copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CE170A332016F703002A62AA /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE39A62200F190800A05D20 /* AdhocConfig.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BLOCKBONDS AS (358UH289E4)";
+				DEVELOPMENT_TEAM = 358UH289E4;
+				GCC_PREPROCESSOR_DEFINITIONS = "ADHOC=1";
+				INFOPLIST_FILE = "MultipleEnvironment copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D ADHOC";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = QA;
+		};
 		CEC631B6200F5C870020A7F8 /* QA */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CEE39A62200F190800A05D20 /* AdhocConfig.xcconfig */;
@@ -375,9 +483,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(APP_ICON)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: BLOCKBONDS AS (358UH289E4)";
 				DEVELOPMENT_TEAM = 358UH289E4;
-				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "ADHOC=1";
 				INFOPLIST_FILE = MultipleEnvironment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D ADHOC";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(APP_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE)";
@@ -521,6 +630,7 @@
 				DEVELOPMENT_TEAM = 358UH289E4;
 				INFOPLIST_FILE = MultipleEnvironment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(APP_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE)";
@@ -601,6 +711,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE170A302016F703002A62AA /* Build configuration list for PBXNativeTarget "MultipleEnvironment  Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE170A312016F703002A62AA /* Debug */,
+				CE170A322016F703002A62AA /* Release */,
+				CE170A332016F703002A62AA /* QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = QA;
+		};
 		CEE39A27200F173100A05D20 /* Build configuration list for PBXProject "MultipleEnvironment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
