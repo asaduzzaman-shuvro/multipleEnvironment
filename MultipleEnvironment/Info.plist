@@ -43,7 +43,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>BackEndUrl</key>
-	<string>$(BACKEND_URL)</string>
 </dict>
 </plist>
