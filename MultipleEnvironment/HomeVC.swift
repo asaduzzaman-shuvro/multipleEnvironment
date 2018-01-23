@@ -11,7 +11,6 @@ import UIKit
 class HomeVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
     var tableView:  UITableView!
-    var datas: [(key: String, value: String)] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +27,7 @@ class HomeVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         
         let button = UIButton(frame: CGRect(x: 0, y: self.view.frame.height - 50, width: self.view.frame.width, height: 50))
         button.backgroundColor = UIColor.green
-        button.setTitle(getValue(for: "BackEndUrl"), for: .normal)
+        button.setTitle(AppConfig.appName, for: .normal)
         button.addTarget(self, action: #selector(reloadTableView), for: .touchUpInside)
         self.view.addSubview(button)
         
@@ -48,16 +47,6 @@ class HomeVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     }
     
     func reloadTableView() {
-        if let infoDic = Bundle.main.infoDictionary {
-            for (key,valu) in infoDic {
-                
-                if let strValue = valu as? String {
-                    let obj = (key, strValue)
-                    datas.append(obj)
-                }
-            }
-            tableView.reloadData()
-        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -65,15 +54,15 @@ class HomeVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         
         if cell == nil {
             cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
-            cell?.textLabel?.text = datas[indexPath.row].key
-            cell?.detailTextLabel?.text = datas[indexPath.row].value
+            cell?.textLabel?.text = AppConfig.configs[indexPath.row].names
+            cell?.detailTextLabel?.text = AppConfig.configs[indexPath.row].value
         }
         
         return cell!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datas.count
+        return AppConfig.configs.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

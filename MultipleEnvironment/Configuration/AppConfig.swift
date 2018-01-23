@@ -34,7 +34,7 @@ struct AppConfig {
     static var firebaseAppSecrete: String = ""
     static var mixPannelAppId: String = ""
     static var mixPannenAppSecret: String = ""
-    static var appName:String = ""
+    static var appName:String = "No Data"
     
     static func setTheAllConfigurations() {
         switch appBuildType {
