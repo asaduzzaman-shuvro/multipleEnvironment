@@ -8,6 +8,6 @@
 
 APP_NAME = Spenn QA
 APP_BUNDLE_ID = com.blockbonds.spenn.qa
-APP_ICON =  AppIconQa
+APP_ICON =  AppIconUAT
 
 PROVISIONING_PROFILE = Spenn Qa Adhoc Profile
