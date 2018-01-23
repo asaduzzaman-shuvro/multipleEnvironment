@@ -279,10 +279,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				CE170A272016F703002A62AA /* MultipleEnvironment  Dev */,
 				CEE39A2B200F173100A05D20 /* MultipleEnvironment */,
 				CEE39A3F200F173100A05D20 /* MultipleEnvironmentTests */,
 				CEE39A4A200F173100A05D20 /* MultipleEnvironmentUITests */,
-				CE170A272016F703002A62AA /* MultipleEnvironment  Dev */,
 			);
 		};
 /* End PBXProject section */

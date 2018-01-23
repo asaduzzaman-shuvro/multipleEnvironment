@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-               BuildableName = "Spenn QA.app"
+               BuildableName = ".app"
                BlueprintName = "MultipleEnvironment"
                ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-            BuildableName = "Spenn QA.app"
+            BuildableName = ".app"
             BlueprintName = "MultipleEnvironment"
             ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-            BuildableName = "Spenn QA.app"
+            BuildableName = ".app"
             BlueprintName = "MultipleEnvironment"
             ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEE39A2B200F173100A05D20"
-            BuildableName = "Spenn QA.app"
+            BuildableName = ".app"
             BlueprintName = "MultipleEnvironment"
             ReferencedContainer = "container:MultipleEnvironment.xcodeproj">
          </BuildableReference>
